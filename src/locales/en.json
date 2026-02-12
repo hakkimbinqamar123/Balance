@@ -1,0 +1,281 @@
+{
+  "brand": {
+    "name": "BALANCE",
+    "tagline": "ACCOUNTING & TAX CONSULTANCY"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "cta": {
+    "consult": "Get a Consultation"
+  },
+  "hero": {
+    "tagline": "Balance Accounting & Tax Consultancy",
+
+    "title_line1": "Where Numbers",
+    "title_highlight": "Find Balance",
+
+    "description_1": "Professional accounting, auditing, and tax advisory services designed to bring clarity, compliance, and confidence to your business.",
+
+    "description_2": "Balance Accounting & Tax Consultancy supports businesses across the UAE with reliable accounting, UAE VAT, and Corporate Tax solutions delivered with precision, integrity, and a deep understanding of local regulations.",
+
+    "cta": "Schedule Consultation"
+  },
+  "why": {
+    "title": "Why Balance Accounting & Tax Consultancy",
+
+    "cards": [
+      {
+        "title": "18+ Years Experience",
+        "text": "Experienced professionals with 18+ years in accounting and finance."
+      },
+      {
+        "title": "UAE VAT & Corporate Tax",
+        "text": "UAE VAT and Corporate Tax compliant expertise."
+      },
+      {
+        "title": "Statutory & Audit Strength",
+        "text": "Strong background in statutory reporting and audits."
+      },
+      {
+        "title": "Business-Focused Solutions",
+        "text": "Practical, business-focused solutions tailored to operations."
+      },
+      {
+        "title": "Clear Support & Communication",
+        "text": "Clear communication and reliable ongoing support."
+      }
+    ],
+
+    "mission": "At Balance Accounting & Tax Consultancy, we believe that well-structured numbers create confidence in decision-making. Our mission is to help businesses stay compliant, organized, and financially balanced so they can focus on growth."
+  },
+"how": {
+    "title": "How We Work",
+    "subtitle": "Our structured and transparent approach ensures accuracy, compliance, and clarity at every stage of your financial process.",
+
+    "steps": [
+      {
+        "title": "Understand Your Business",
+        "text": "We begin by understanding your operations, structure, and compliance requirements.",
+        "alt": "Understand Your Business"
+      },
+      {
+        "title": "Review & Structure",
+        "text": "We review existing records and design structured, compliant accounting workflows.",
+        "alt": "Review and Structure"
+      },
+      {
+        "title": "Execute & Report",
+        "text": "Accurate bookkeeping, reporting, and tax preparation are carried out with precision.",
+        "alt": "Execute and Report"
+      },
+      {
+        "title": "Ongoing Support",
+        "text": "Continuous advisory and compliance support to keep your business financially balanced.",
+        "alt": "Ongoing Support"
+      }
+    ]
+  },
+  "industries": {
+    "title": "Industries We Support",
+    "subtitle": "We provide accounting and tax compliance support across a wide range of business sectors in the UAE.",
+
+    "items": [
+      {
+        "title": "SMEs",
+        "text": "Structured accounting and tax support for growing small and medium enterprises."
+      },
+      {
+        "title": "Trading Businesses",
+        "text": "VAT, reporting, and inventory-aligned financial controls."
+      },
+      {
+        "title": "Professional Services",
+        "text": "Advisory, consulting, and service firms with compliance needs."
+      },
+      {
+        "title": "Project Businesses",
+        "text": "Structured reporting and cost controls for project-based firms."
+      },
+      {
+        "title": "Startups",
+        "text": "Foundation accounting setup and early-stage compliance."
+      },
+      {
+        "title": "Retail",
+        "text": "VAT-ready reporting and transaction-heavy bookkeeping."
+      },
+      {
+        "title": "UAE Entities",
+        "text": "Local compliance aligned with UAE tax regulations."
+      },
+      {
+        "title": "Growing Firms",
+        "text": "Scalable financial processes and reporting systems."
+      }
+    ]
+  },
+  "footer": {
+    "company_title": "Balance Accounting & Tax Consultancy",
+    "company_text": "Professional accounting, VAT, and Corporate Tax advisory services across the UAE — delivering clarity, compliance, and financial balance for growing businesses.",
+
+    "quick_links": "Quick Links",
+    "services": "Services",
+    "contact": "Contact",
+
+    "links": {
+      "home": "Home",
+      "about": "About Us",
+      "services": "Services",
+      "contact": "Contact"
+    },
+
+    "service_list": [
+      "Accounting & Bookkeeping",
+      "Financial Reporting",
+      "UAE VAT Services",
+      "Corporate Tax (CT)",
+      "Process & Controls Review"
+    ],
+
+    "labels": {
+      "email": "Email",
+      "office": "Office"
+    },
+
+    "address": [
+      "Smart Station, First Floor",
+      "Incubator Building",
+      "Masdar City, Abu Dhabi",
+      "United Arab Emirates"
+    ],
+
+    "map": "View on Map →",
+
+    "copyright": "Balance Accounting & Tax Consultancy. All rights reserved.",
+
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "aboutHero": {
+    "label": "About Us",
+    "title": "Clarity. Compliance. Financial Balance."
+  },
+  "who": {
+    "title": "Who We Are",
+
+    "p1": "Balance Accounting & Tax Consultancy is a professional firm based in Abu Dhabi, managed by professionals with more than 18 years of experience, providing comprehensive accounting and tax advisory services to businesses across the UAE.",
+
+    "p2": "We support organizations in maintaining accurate financial records, ensuring regulatory compliance, and building strong financial foundations that enable sustainable growth.",
+
+    "p3": "With deep expertise across accounting, taxation, statutory reporting, and internal controls, we simplify complex financial processes and deliver clarity, structure, and confidence in financial decision-making.",
+
+    "imgAlt": "About Balance Accounting & Tax Consultancy"
+  },
+  "vision": {
+    "vision_title": "Our Vision",
+    "vision_text": "To be a trusted accounting and tax advisory firm in UAE, recognized for clarity, balance, and reliability, while supporting sustainable, forward-thinking businesses through compliant and transparent financial decision-making.",
+
+    "mission_title": "Our Mission",
+    "mission_text": "To simplify financial complexity by delivering accurate accounting, compliant tax solutions, and structured financial processes that allow businesses to focus on growth and sustainability."
+  },
+  "values": {
+    "title": "Our Core Values",
+    "items": [
+      {
+        "title": "Accuracy",
+        "text": "Precision in every number and report"
+      },
+      {
+        "title": "Integrity",
+        "text": "Ethical and transparent practices"
+      },
+      {
+        "title": "Compliance",
+        "text": "Aligned with UAE regulations"
+      },
+      {
+        "title": "Efficiency",
+        "text": "Streamlined reporting & workflows"
+      },
+      {
+        "title": "Partnership",
+        "text": "Long-term client relationships"
+      }
+    ]
+  },
+  "servicesHero": {
+    "label": "Our Services",
+    "title": "Professional Accounting & Tax Solutions",
+    "subtitle": "Structured, compliant, and practical financial services designed to support business growth across the UAE.",
+    "imgAlt": "Services background"
+  },
+  "servicesGrid": {
+    "items": [
+      {
+        "title": "Accounting & Bookkeeping",
+        "text": "We provide accurate and organized accounting and bookkeeping services to ensure your financial records are complete, up to date, and compliant with UAE regulations. Our services support day-to-day transactions, general ledger management, reconciliations, and smooth month-end and year-end closings."
+      },
+      {
+        "title": "Financial Reporting",
+        "text": "We prepare clear and reliable financial reports that give you full visibility into your business performance. Our reporting services include monthly, quarterly, and annual financial statements, ensuring accuracy, consistency, and compliance with statutory requirements."
+      },
+      {
+        "title": "UAE VAT Services",
+        "text": "We support businesses with end-to-end UAE VAT compliance, including registration, return preparation, reconciliation, and advisory. Our approach ensures accurate filings, minimizes risks, and helps businesses remain fully compliant with Federal Tax Authority requirements."
+      },
+      {
+        "title": "Corporate Tax (CT)",
+        "text": "We assist businesses in meeting UAE Corporate Tax obligations through accurate tax calculations, compliance support, and filing preparation. Our services are designed to ensure compliance while aligning tax reporting with your financial records and business activities."
+      },
+      {
+        "title": "Process Improvement & Controls",
+        "text": "We help businesses enhance efficiency and strengthen internal controls by reviewing existing financial processes and developing clear standard operating procedures (SOPs). Our focus is on reducing risk, improving accuracy, and creating structured, scalable accounting workflows."
+      },
+      {
+        "title": "Payroll Service",
+        "text": "Our Payroll Preparation Service ensures accurate calculation, proper documentation, and full compliance with UAE labor and regulatory requirements before salaries are processed and paid. We prepare payroll data systematically to support timely payments, reporting, and audit readiness."
+      },
+      {
+        "title": "Audit Support Services",
+        "text": "Our Audit Support Services assist businesses in preparing complete and accurate documentation and coordinating the audit process with approved and qualified third-party auditors. We act as a liaison to ensure a smooth, efficient, and well-organized audit experience."
+      }
+    ]
+  },
+  "ctaSection": {
+    "title": "Need Structured Financial Support?",
+    "subtitle": "Let us help bring clarity and compliance to your accounting and tax processes.",
+    "button": "Schedule a Consultation"
+  },
+  "contactSection": {
+    "imgAlt": "Office",
+
+    "title": "Get in Touch",
+
+    "labels": {
+      "email": "Email",
+      "office": "Office Address"
+    },
+
+    "address": [
+      "Smart Station, First Floor",
+      "Incubator Building",
+      "Masdar City, Abu Dhabi",
+      "United Arab Emirates"
+    ],
+
+    "mapButton": "View Location on Map",
+
+    "form": {
+      "title": "Send a Message",
+      "name": "Full Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message"
+    }
+  }
+}
