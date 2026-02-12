@@ -1,7 +1,7 @@
-import img1 from "../../assets/images/website1.webp";
-import img2 from "../../assets/images/Website(41).webp";
-import img3 from "../../assets/images/Website(33).webp";
-import img4 from "../../assets/images/Website(29).webp";
+import img1 from "../../assets/Images/website1.webp";
+import img2 from "../../assets/Images/Website(41).webp";
+import img3 from "../../assets/Images/Website(33).webp";
+import img4 from "../../assets/Images/Website(29).webp";
 import { useTranslation } from "react-i18next";
 
 export default function HowWeWork() {
