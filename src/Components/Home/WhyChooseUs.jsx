@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import img1 from "../../assets/Images/Website(23).webp";
-import img2 from "../../assets/images/Website(41).webp";
+import img2 from "../../assets/images/website-41.webp";
 import img3 from "../../assets/images/Website(39).webp";
 import img4 from "../../assets/images/Website(26).webp";
 import img5 from "../../assets/images/Website(29).webp";
