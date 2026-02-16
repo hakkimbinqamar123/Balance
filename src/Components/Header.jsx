@@ -18,9 +18,9 @@ export default function Header() {
   const navClass = ({ isActive }) =>
     `block w-full pb-2 transition border-b border-[#616160]/40
      ${isActive
-        ? "text-[#F7E2BA]"
-        : "text-[#C7C6C6] hover:text-[#F7E2BA]"
-      }`;
+      ? "text-[#F7E2BA]"
+      : "text-[#C7C6C6] hover:text-[#F7E2BA]"
+    }`;
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 animate-fade-down bg-[#616160]/30 backdrop">
@@ -31,30 +31,31 @@ export default function Header() {
           {/* LOGO */}
           <NavLink to="/" className="flex items-center gap-3 text-[#F7E2BA]">
 
-  {/* Round Border Container */}
-  <div className="h-12 w-12 rounded-full border bg-white border-[#EAC868] shadow-md p-2 bg-transparent flex items-center justify-center">
-    <img
-      src={logo}
-      alt="logo"
-      className="h-full w-full object-contain"
-    />
-  </div>
+            <div className="h-12 w-12 rounded-full pl-1 border border-[#EAC868] shadow-md 
+                bg-white flex items-center justify-center overflow-hidden">
+              <img
+                src={logo}
+                alt="logo"
+                className="h-8 w-8 object-contain"
+              />
+            </div>
 
-  <div>
-    <div className="text-2xl font-extrabold tracking-widest">
-      {t("brand.name")}
-    </div>
-    <div className="text-xs text-[#C7C6C6] -mt-1">
-      {t("brand.tagline")}
-    </div>
-  </div>
 
-</NavLink>
+            <div>
+              <div className="text-2xl font-extrabold tracking-widest">
+                {t("brand.name")}
+              </div>
+              <div className="text-xs text-[#C7C6C6] -mt-1">
+                {t("brand.tagline")}
+              </div>
+            </div>
+
+          </NavLink>
 
 
           {/* DESKTOP NAV */}
           <nav className="hidden md:flex items-center gap-10 text-sm font-medium">
-            <NavLink to="/" className={({isActive}) =>
+            <NavLink to="/" className={({ isActive }) =>
               isActive
                 ? "text-[#F7E2BA] border-b-2 border-[#EAC868] pb-1"
                 : "text-[#C7C6C6] hover:text-[#F7E2BA] pb-1"
@@ -62,7 +63,7 @@ export default function Header() {
               {t("nav.home")}
             </NavLink>
 
-            <NavLink to="/about" className={({isActive}) =>
+            <NavLink to="/about" className={({ isActive }) =>
               isActive
                 ? "text-[#F7E2BA] border-b-2 border-[#EAC868] pb-1"
                 : "text-[#C7C6C6] hover:text-[#F7E2BA] pb-1"
@@ -70,7 +71,7 @@ export default function Header() {
               {t("nav.about")}
             </NavLink>
 
-            <NavLink to="/services" className={({isActive}) =>
+            <NavLink to="/services" className={({ isActive }) =>
               isActive
                 ? "text-[#F7E2BA] border-b-2 border-[#EAC868] pb-1"
                 : "text-[#C7C6C6] hover:text-[#F7E2BA] pb-1"
@@ -78,7 +79,7 @@ export default function Header() {
               {t("nav.services")}
             </NavLink>
 
-            <NavLink to="/contact" className={({isActive}) =>
+            <NavLink to="/contact" className={({ isActive }) =>
               isActive
                 ? "text-[#F7E2BA] border-b-2 border-[#EAC868] pb-1"
                 : "text-[#C7C6C6] hover:text-[#F7E2BA] pb-1"
@@ -94,21 +95,19 @@ export default function Header() {
             <div className="flex border border-[#EAC868]/60 rounded-lg overflow-hidden text-xs">
               <button
                 onClick={() => changeLang("en")}
-                className={`px-3 py-1 transition ${
-                  i18n.language === "en"
-                    ? "bg-[#EAC868] text-[#532C20]"
-                    : "text-[#F7E2BA] hover:bg-[#EAC868]/20"
-                }`}
+                className={`px-3 py-1 transition ${i18n.language === "en"
+                  ? "bg-[#EAC868] text-[#532C20]"
+                  : "text-[#F7E2BA] hover:bg-[#EAC868]/20"
+                  }`}
               >
                 EN
               </button>
               <button
                 onClick={() => changeLang("ar")}
-                className={`px-3 py-1 transition ${
-                  i18n.language === "ar"
-                    ? "bg-[#EAC868] text-[#532C20]"
-                    : "text-[#F7E2BA] hover:bg-[#EAC868]/20"
-                }`}
+                className={`px-3 py-1 transition ${i18n.language === "ar"
+                  ? "bg-[#EAC868] text-[#532C20]"
+                  : "text-[#F7E2BA] hover:bg-[#EAC868]/20"
+                  }`}
               >
                 AR
               </button>
