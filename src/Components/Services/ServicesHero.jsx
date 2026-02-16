@@ -39,7 +39,7 @@ export default function ServicesHero() {
           <span className="relative inline-block">
 
             {/* Gold highlight text */}
-            <span className="bg-gradient-to-r from-[#F7E2BA] via-[#EAC868] to-[#202C53] bg-clip-text text-transparent drop-shadow-[0_6px_24px_rgba(32,44,83,0.35)]">
+            <span className="bg-gradient-to-r from-[#6FA8FF] via-white to-[#EAC868] bg-clip-text text-transparent drop-shadow-[0_6px_24px_rgba(32,44,83,0.35)]">
               {t("servicesHero.title")}
             </span>
 
@@ -50,11 +50,11 @@ export default function ServicesHero() {
 
         {/* Subtitle */}
         <div className="mt-6 overflow-x-auto">
-  <p className="text-[#C7C6C6] text-lg leading-relaxed whitespace-nowrap
+          <p className="text-[#C7C6C6] text-lg leading-relaxed whitespace-nowrap
                 animate-fade-up animate-delay-2">
-    {t("servicesHero.subtitle")}
-  </p>
-</div>
+            {t("servicesHero.subtitle")}
+          </p>
+        </div>
 
 
 
