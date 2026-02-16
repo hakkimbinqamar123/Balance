@@ -15,17 +15,23 @@ export default function Industries() {
   ];
 
   return (
-    <section className="py-24 bg-slate-900">
+    <section className="py-24 bg-gradient-to-br from-[#202C53] via-[#202C53]/95 to-[#0b1c2d]">
       <div className="max-w-7xl mx-auto px-8">
 
         {/* Header */}
         <div className="mb-16 max-w-2xl text-start">
-          <h2 className="font-hero text-4xl text-white mb-4">
-            {t("industries.title")}
+          <h2 className="font-hero text-4xl mb-4">
+            <span className="bg-gradient-to-r from-[#F7E2BA] via-[#EAC868] to-[#D6AC44] bg-clip-text text-transparent">
+              {t("industries.title")}
+            </span>
           </h2>
-          <p className="text-slate-400">
+
+          <p className="text-[#C7C6C6] leading-relaxed">
             {t("industries.subtitle")}
           </p>
+
+          {/* Accent underline */}
+          <div className="mt-4 h-[3px] w-24 rounded-full bg-gradient-to-r from-[#D6AC44] to-transparent" />
         </div>
 
         {/* Grid */}
@@ -33,19 +39,28 @@ export default function Industries() {
           {icons.map((icon, i) => (
             <div
               key={i}
-              className="bg-slate-950 border border-slate-800 rounded-xl p-8 hover:border-slate-600 transition"
+              className="group bg-[#202C53]/80 border border-[#202C53] rounded-xl p-8 
+                         hover:border-[#EAC868] hover:-translate-y-2 
+                         transition duration-300 shadow-xl"
             >
-              <div className="text-3xl mb-3 text-white">
+              {/* Icon */}
+              <div className="text-3xl mb-4 transition
+                              text-[#F7E2BA] group-hover:text-[#EAC868]">
                 {icon}
               </div>
 
-              <h3 className="font-semibold mb-2 text-white">
+              {/* Title */}
+              <h3 className="font-semibold mb-2 text-[#F7E2BA] group-hover:text-[#EAC868] transition">
                 {t(`industries.items.${i}.title`)}
               </h3>
 
-              <p className="text-slate-400 text-sm">
+              {/* Text */}
+              <p className="text-[#C7C6C6] text-sm leading-relaxed">
                 {t(`industries.items.${i}.text`)}
               </p>
+
+              {/* Accent line */}
+              <div className="mt-5 h-[2px] w-12 bg-gradient-to-r from-[#D6AC44] to-transparent rounded-full" />
             </div>
           ))}
         </div>

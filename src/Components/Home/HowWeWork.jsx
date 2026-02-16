@@ -15,17 +15,24 @@ export default function HowWeWork() {
   ];
 
   return (
-    <section className="py-24 bg-slate-950">
+    <section className="py-24 bg-gradient-to-br from-[#202C53] via-[#202C53] to-[#D6AC44]/25">
       <div className="max-w-7xl mx-auto px-8">
 
         {/* Header */}
         <div className="mb-16 max-w-2xl text-start">
-          <h2 className="font-hero text-4xl text-white mb-4">
-            {t("how.title")}
+
+          <h2 className="font-hero text-4xl mb-4">
+            <span className="bg-gradient-to-r from-[#F7E2BA] via-[#EAC868] to-[#D6AC44] bg-clip-text text-transparent">
+              {t("how.title")}
+            </span>
           </h2>
-          <p className="text-slate-400">
+
+          <p className="text-[#C7C6C6] leading-relaxed">
             {t("how.subtitle")}
           </p>
+
+          {/* Accent underline */}
+          <div className="mt-4 h-[3px] w-24 rounded-full bg-gradient-to-r from-[#D6AC44] to-transparent" />
         </div>
 
         {/* Cards */}
@@ -33,29 +40,57 @@ export default function HowWeWork() {
           {steps.map((step, i) => (
             <div
               key={step.no}
-              className="group bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-slate-600 transition"
+              className="group bg-[#202C53]/85 border border-[#202C53] rounded-2xl overflow-hidden
+                         hover:border-[#EAC868] hover:-translate-y-2
+                         transition duration-300 shadow-xl"
             >
-              <div className="h-40 overflow-hidden">
+              {/* Image */}
+              <div className="h-40 overflow-hidden relative">
+
                 <img
                   src={step.img}
                   alt={t(`how.steps.${i}.alt`)}
-                  className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition duration-300"
+                  className="w-full h-full object-cover
+                             contrast-110 brightness-90 saturate-80
+                             group-hover:scale-110 transition duration-500"
                 />
+
+                {/* Brand tint overlay */}
+                <div className="absolute inset-0
+                                bg-gradient-to-br
+                                from-[#202C53]/65
+                                via-[#202C53]/40
+                                to-[#D6AC44]/30
+                                mix-blend-multiply" />
               </div>
 
+              {/* Content */}
               <div className="p-6">
-                <div className="text-4xl font-hero text-white/20 mb-2">
+
+                {/* Step Number */}
+                <div className="text-4xl font-hero mb-2
+                                bg-gradient-to-r from-[#F7E2BA] via-[#EAC868] to-[#D6AC44]
+                                bg-clip-text text-transparent opacity-95">
                   {step.no}
                 </div>
 
-                <h3 className="text-xl font-semibold text-white mb-3">
+                {/* Title */}
+                <h3 className="text-xl font-semibold text-[#F7E2BA] mb-3
+                               group-hover:text-[#EAC868] transition">
                   {t(`how.steps.${i}.title`)}
                 </h3>
 
-                <p className="text-slate-400">
+                {/* Text */}
+                <p className="text-[#C7C6C6] leading-relaxed text-sm">
                   {t(`how.steps.${i}.text`)}
                 </p>
+
+                {/* Accent line */}
+                <div className="mt-5 h-[2px] w-12
+                                bg-gradient-to-r from-[#D6AC44] to-transparent
+                                rounded-full" />
               </div>
+
             </div>
           ))}
         </div>

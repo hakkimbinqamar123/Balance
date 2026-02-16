@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-body {
-  font-family: 'Inter', sans-serif;
-}
-
 /* ================= BG ANIMATION ================= */
 
 @keyframes bgFloat {
@@ -84,7 +80,7 @@ body {
 
 /* FRONT */
 .flip-front {
-  background: #0f172a;
+  background: #616160;
 }
 
 /* IMAGE — THIS FIXES SIZE */
@@ -97,7 +93,7 @@ body {
 
 /* BACK */
 .flip-back {
-  background: #020617;
+  background: #616160;
   transform: rotateY(180deg);
 }
 

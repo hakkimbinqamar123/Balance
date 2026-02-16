@@ -1,5 +1,6 @@
 import { Route, Routes, useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
+import { useTranslation } from "react-i18next"
 
 import './App.css'
 import Home from './Pages/Home'
@@ -16,6 +17,14 @@ function App() {
   const location = useLocation()
   const [loading, setLoading] = useState(false)
 
+  const { i18n } = useTranslation()
+  const isArabic = i18n.language === "ar"
+
+  // ✅ set RTL/LTR direction
+  useEffect(() => {
+    document.documentElement.dir = isArabic ? "rtl" : "ltr"
+  }, [isArabic])
+
   useEffect(() => {
     setLoading(true)
     const t = setTimeout(() => setLoading(false), 500)
@@ -23,7 +32,7 @@ function App() {
   }, [location.pathname])
 
   return (
-    <>
+    <div className={isArabic ? "font-ar" : "font-en"}>
       {loading && <PageLoader />}
 
       <Header />
@@ -37,9 +46,8 @@ function App() {
 
       <Footer />
 
-      {/* Persistent floating WhatsApp */}
       <WhatsAppFloat />
-    </>
+    </div>
   )
 }
 

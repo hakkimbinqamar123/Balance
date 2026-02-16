@@ -5,26 +5,34 @@ export default function CTASection() {
   const { t } = useTranslation();
 
   return (
-    <section className="py-20 bg-slate-900 border-t border-slate-800">
+    <section className="py-20 bg-gradient-to-br from-[#202C53] via-[#202C53]/95 to-[#D6AC44]/25">
       <div className="max-w-4xl mx-auto text-center px-8">
 
-        <h2 className="font-hero text-4xl mb-6 text-white">
-          {t("ctaSection.title")}
+        {/* Title */}
+        <h2 className="font-hero text-4xl mb-6">
+          <span className="bg-gradient-to-r from-[#F7E2BA] via-[#EAC868] to-[#D6AC44] bg-clip-text text-transparent">
+            {t("ctaSection.title")}
+          </span>
         </h2>
 
-        <p className="text-slate-400 mb-10 text-lg">
+        {/* Subtitle */}
+        <p className="text-[#C7C6C6] mb-10 text-lg leading-relaxed">
           {t("ctaSection.subtitle")}
         </p>
 
+        {/* Button — same style as Hero CTA */}
         <Link to="/contact">
           <button
             className="
-              border border-white/70
+              btn-lift
+              bg-[#F7E2BA]
+              border border-[#F7E2BA]
               px-10 py-4
               rounded-xl
-              text-lg
-              text-white
-              hover:bg-white hover:text-slate-900
+              text-lg font-medium
+              text-[#202C53]
+              hover:bg-[#EAC868]
+              hover:border-[#EAC868]
               transition
             "
           >

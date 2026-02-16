@@ -29,11 +29,11 @@ export default function WhyChooseUs() {
   }, []);
 
   return (
-    <section className="py-24 bg-slate-900 overflow-hidden">
+    <section className="py-24 bg-[#202C53] overflow-hidden border-t border-[#616160]/40">
       <div className="max-w-7xl mx-auto px-8">
 
         {/* Title */}
-        <h2 className="font-hero text-4xl mb-16 text-white text-center">
+        <h2 className="font-hero text-4xl mb-16 text-[#F7E2BA] text-center">
           {t("why.title")}
         </h2>
 
@@ -61,7 +61,7 @@ export default function WhyChooseUs() {
                   zIndex: 100 - Math.abs(offset),
                 }}
               >
-                <div className="w-[340px] flip-card shadow-2xl shadow-black/40">
+                <div className="w-[340px] flip-card shadow-2xl shadow-black/50">
                   <div className="flip-inner">
 
                     {/* FRONT */}
@@ -70,11 +70,11 @@ export default function WhyChooseUs() {
                     </div>
 
                     {/* BACK */}
-                    <div className="flip-back p-8 bg-[#020617] flex flex-col justify-center">
-                      <h3 className="text-xl font-semibold mb-3 text-white">
+                    <div className="flip-back p-8 bg-[#616160] flex flex-col justify-center border border-[#C7C6C6]/30">
+                      <h3 className="text-xl font-semibold mb-3 text-[#F7E2BA]">
                         {t(`why.cards.${i}.title`)}
                       </h3>
-                      <p className="text-slate-400">
+                      <p className="text-[#C7C6C6]">
                         {t(`why.cards.${i}.text`)}
                       </p>
                     </div>
@@ -88,14 +88,14 @@ export default function WhyChooseUs() {
           {/* Arrows */}
           <button
             onClick={prev}
-            className="absolute left-0 md:left-10 bg-slate-800/90 hover:bg-slate-700 border border-slate-600 w-12 h-12 rounded-full text-white z-50"
+            className="absolute left-0 md:left-10 bg-[#616160]/90 hover:bg-[#EAC868] border border-[#C7C6C6]/40 w-12 h-12 rounded-full text-[#F7E2BA] hover:text-[#532C20] z-50 transition"
           >
             ←
           </button>
 
           <button
             onClick={next}
-            className="absolute right-0 md:right-10 bg-slate-800/90 hover:bg-slate-700 border border-slate-600 w-12 h-12 rounded-full text-white z-50"
+            className="absolute right-0 md:right-10 bg-[#616160]/90 hover:bg-[#EAC868] border border-[#C7C6C6]/40 w-12 h-12 rounded-full text-[#F7E2BA] hover:text-[#532C20] z-50 transition"
           >
             →
           </button>
@@ -109,7 +109,9 @@ export default function WhyChooseUs() {
               key={i}
               onClick={() => setIndex(i)}
               className={`h-2.5 rounded-full transition-all ${
-                i === index ? "bg-white w-8" : "bg-slate-600 w-2.5"
+                i === index
+                  ? "bg-[#EAC868] w-8"
+                  : "bg-[#616160] w-2.5"
               }`}
             />
           ))}
@@ -118,11 +120,11 @@ export default function WhyChooseUs() {
         {/* Mission Block */}
         <div className="mt-16 relative group">
 
-          <div className="absolute -inset-1 bg-gradient-to-r from-slate-700/20 via-white/10 to-slate-700/20 blur-xl opacity-60 group-hover:opacity-90 transition rounded-3xl" />
+          <div className="absolute -inset-1 bg-gradient-to-r from-[#D6AC44]/30 via-[#EAC868]/20 to-[#D6AC44]/30 blur-xl opacity-60 group-hover:opacity-90 transition rounded-3xl" />
 
-          <div className="relative bg-white/5 backdrop-blur-xl border border-white/15 rounded-2xl p-10 text-slate-200 shadow-2xl transition-all duration-500 group-hover:-translate-y-1 group-hover:shadow-[0_20px_60px_rgba(0,0,0,0.6)]">
+          <div className="relative bg-[#616160]/40 backdrop-blur-xl border border-[#C7C6C6]/30 rounded-2xl p-10 text-[#C7C6C6] shadow-2xl transition-all duration-500 group-hover:-translate-y-1 group-hover:shadow-[0_20px_60px_rgba(0,0,0,0.6)]">
 
-            <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent rounded-2xl pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-br from-[#F7E2BA]/10 via-transparent to-transparent rounded-2xl pointer-events-none" />
 
             <p className="relative text-lg leading-relaxed text-start">
               {t("why.mission")}
