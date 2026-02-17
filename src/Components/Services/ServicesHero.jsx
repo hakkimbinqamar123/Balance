@@ -20,11 +20,6 @@ export default function ServicesHero() {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-8 pt-24 text-start">
 
-        {/* Label */}
-        <p className="uppercase tracking-widest text-[#C7C6C6] text-sm mb-4 animate-fade-up">
-          {t("servicesHero.label")}
-        </p>
-
         {/* Title */}
         <h1
           className="

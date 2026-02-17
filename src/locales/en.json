@@ -163,11 +163,11 @@
     "terms": "Terms of Service"
   },
   "aboutHero": {
-    "label": "Who We Are",
-    "title": "Compliance With Clear Direction."
+    "label": "",
+    "title": "Compliance With Clear Direction"
   },
   "who": {
-    "title": "",
+    "title": "Who We Are",
 
     "p1": "Balance Accounting & Tax Consultancy is a professional firm based in Abu Dhabi, managed by professionals with more than 18 years of experience, providing comprehensive accounting and tax advisory services to businesses across the UAE.",
 
@@ -209,6 +209,7 @@
       }
     ]
   },
+
   "servicesHero": {
     "label": "Our Services",
     "title": "Professional Accounting & Tax Solutions",

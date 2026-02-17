@@ -12,7 +12,6 @@ export default function Footer() {
 
       <div className="max-w-7xl mx-auto px-8 py-16 grid md:grid-cols-4 gap-12">
 
-        {/* Company */}
         <div className="text-start">
           <h3 className="font-semibold text-lg mb-4 bg-gradient-to-r from-[#F7E2BA] to-[#EAC868] bg-clip-text text-transparent">
             {t("footer.company_title")}
@@ -22,7 +21,6 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Quick Links */}
         <div className="text-start">
           <h4 className="font-semibold mb-4 bg-gradient-to-r from-[#F7E2BA] to-[#EAC868] bg-clip-text text-transparent">
             {t("footer.quick_links")}
@@ -35,7 +33,6 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Services */}
         <div className="text-start">
           <h4 className="font-semibold mb-4 bg-gradient-to-r from-[#F7E2BA] to-[#EAC868] bg-clip-text text-transparent">
             {t("footer.services")}
@@ -49,7 +46,6 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Contact */}
         <div className="text-start">
           <h4 className="font-semibold mb-4 bg-gradient-to-r from-[#F7E2BA] to-[#EAC868] bg-clip-text text-transparent">
             {t("footer.contact")}
@@ -61,16 +57,19 @@ export default function Footer() {
               <p className="text-[#D6AC44] mb-1">{t("footer.labels.email")}</p>
               <a
                 href="mailto:info@balancellc.ae"
-                className="hover:text-[#EAC868] transition"
+                dir="ltr"
+                className="inline-block text-left hover:text-[#EAC868] transition"
               >
                 info@balancellc.ae
               </a>
             </div>
+
             <div>
               <p className="text-[#D6AC44] mb-1">{t("footer.labels.phone")}</p>
               <a
-                href="tel:+971 54 447 1999"
-                className="hover:text-[#EAC868] transition"
+                href="tel:+971544471999"
+                dir="ltr"
+                className="inline-block text-left hover:text-[#EAC868] transition"
               >
                 +971 54 447 1999
               </a>
@@ -104,7 +103,6 @@ export default function Footer() {
 
       </div>
 
-      {/* Bottom Bar */}
       <div className="border-t border-[#202C53]/70 bg-[#202C53]/60">
         <div className="max-w-7xl mx-auto px-8 py-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-[#C7C6C6]/70">
 

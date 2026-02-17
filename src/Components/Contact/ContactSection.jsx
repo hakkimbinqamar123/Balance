@@ -1,3 +1,4 @@
+import { useState } from "react";
 import contactImg from "../../assets/Images/Website(25).webp";
 import { useTranslation } from "react-i18next";
 
@@ -5,11 +6,51 @@ export default function ContactSection() {
   const { t } = useTranslation();
   const address = t("contactSection.address", { returnObjects: true });
 
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: ""
+  });
+
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState("");
+
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setStatus("");
+
+    try {
+      const res = await fetch("https://balancellc.ae/api/send-mail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(form)
+      });
+
+      if (res.ok) {
+        setStatus("success");
+        setForm({ name: "", email: "", subject: "", message: "" });
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
+
+    setLoading(false);
+  };
+
   return (
     <section className="py-24 pt-32 bg-gradient-to-br from-[#202C53] via-[#202C53]/95 to-[#0b1c2d]">
       <div className="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-16">
 
-        {/* LEFT SIDE */}
         <div className="space-y-10 text-start">
 
           <div className="relative group">
@@ -34,10 +75,7 @@ export default function ContactSection() {
                 <p className="text-[#D6AC44] text-sm">
                   {t("contactSection.labels.email")}
                 </p>
-                <a
-                  href="mailto:info@balancellc.ae"
-                  className="text-lg hover:text-[#EAC868] transition"
-                >
+                <a href="mailto:info@balancellc.ae" className="text-lg hover:text-[#EAC868] transition">
                   info@balancellc.ae
                 </a>
               </div>
@@ -48,11 +86,13 @@ export default function ContactSection() {
                 </p>
                 <a
                   href="tel:+971544471999"
-                  className="text-lg hover:text-[#EAC868] transition"
+                  dir="ltr"
+                  className="inline-block text-left text-lg hover:text-[#EAC868] transition"
                 >
                   +971 54 447 1999
                 </a>
               </div>
+
 
               <div>
                 <p className="text-[#D6AC44] text-sm">
@@ -60,9 +100,7 @@ export default function ContactSection() {
                 </p>
                 <p className="text-lg leading-relaxed">
                   {address.map((line, i) => (
-                    <span key={i}>
-                      {line}<br />
-                    </span>
+                    <span key={i}>{line}<br /></span>
                   ))}
                 </p>
               </div>
@@ -81,10 +119,8 @@ export default function ContactSection() {
 
             </div>
           </div>
-
         </div>
 
-        {/* RIGHT SIDE FORM */}
         <div className="bg-[#202C53]/90 border border-[#616160]/40 rounded-2xl p-10 text-start shadow-xl">
 
           <h3 className="font-hero text-2xl mb-8">
@@ -93,17 +129,18 @@ export default function ContactSection() {
             </span>
           </h3>
 
-          <form className="space-y-6">
+          <form className="space-y-6" onSubmit={handleSubmit}>
 
-            {/* Input style shared */}
             <div>
               <label className="text-sm text-[#C7C6C6]">
                 {t("contactSection.form.name")}
               </label>
               <input
-                type="text"
-                className="w-full mt-2 bg-[#0b1c2d] border border-[#616160]/50 rounded-lg px-4 py-3 
-                           focus:border-[#EAC868] outline-none text-white transition"
+                name="name"
+                value={form.name}
+                onChange={handleChange}
+                required
+                className="w-full mt-2 bg-[#0b1c2d] border border-[#616160]/50 rounded-lg px-4 py-3 focus:border-[#EAC868] outline-none text-white"
               />
             </div>
 
@@ -112,9 +149,12 @@ export default function ContactSection() {
                 {t("contactSection.form.email")}
               </label>
               <input
+                name="email"
                 type="email"
-                className="w-full mt-2 bg-[#0b1c2d] border border-[#616160]/50 rounded-lg px-4 py-3 
-                           focus:border-[#EAC868] outline-none text-white transition"
+                value={form.email}
+                onChange={handleChange}
+                required
+                className="w-full mt-2 bg-[#0b1c2d] border border-[#616160]/50 rounded-lg px-4 py-3 focus:border-[#EAC868] outline-none text-white"
               />
             </div>
 
@@ -123,9 +163,10 @@ export default function ContactSection() {
                 {t("contactSection.form.subject")}
               </label>
               <input
-                type="text"
-                className="w-full mt-2 bg-[#0b1c2d] border border-[#616160]/50 rounded-lg px-4 py-3 
-                           focus:border-[#EAC868] outline-none text-white transition"
+                name="subject"
+                value={form.subject}
+                onChange={handleChange}
+                className="w-full mt-2 bg-[#0b1c2d] border border-[#616160]/50 rounded-lg px-4 py-3 focus:border-[#EAC868] outline-none text-white"
               />
             </div>
 
@@ -134,21 +175,30 @@ export default function ContactSection() {
                 {t("contactSection.form.message")}
               </label>
               <textarea
+                name="message"
                 rows={5}
-                className="w-full mt-2 bg-[#0b1c2d] border border-[#616160]/50 rounded-lg px-4 py-3 
-                           focus:border-[#EAC868] outline-none text-white transition"
+                value={form.message}
+                onChange={handleChange}
+                required
+                className="w-full mt-2 bg-[#0b1c2d] border border-[#616160]/50 rounded-lg px-4 py-3 focus:border-[#EAC868] outline-none text-white"
               />
             </div>
 
-            {/* Submit button — brand style */}
             <button
               type="submit"
-              className="w-full bg-[#F7E2BA] border border-[#F7E2BA] py-4 rounded-xl 
-                         text-lg font-medium text-[#202C53]
-                         hover:bg-[#EAC868] hover:border-[#EAC868] transition"
+              disabled={loading}
+              className="w-full bg-[#F7E2BA] border border-[#F7E2BA] py-4 rounded-xl text-lg font-medium text-[#202C53] hover:bg-[#EAC868] transition disabled:opacity-60"
             >
-              {t("contactSection.form.submit")}
+              {loading ? "Sending..." : t("contactSection.form.submit")}
             </button>
+
+            {status === "success" && (
+              <p className="text-green-400 text-sm">Message sent successfully</p>
+            )}
+
+            {status === "error" && (
+              <p className="text-red-400 text-sm">Failed to send message</p>
+            )}
 
           </form>
         </div>

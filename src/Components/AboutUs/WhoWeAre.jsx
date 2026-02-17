@@ -11,11 +11,16 @@ export default function WhoWeAre() {
         {/* Text */}
         <div className="space-y-6 text-[#C7C6C6] text-lg leading-relaxed text-start">
 
-          <h2 className="font-hero text-3xl mb-4">
+          <div className="mb-16 max-w-2xl text-start">
+          <h2 className="font-hero text-4xl mb-4">
             <span className="bg-gradient-to-r from-[#F7E2BA] via-[#EAC868] to-[#D6AC44] bg-clip-text text-transparent">
               {t("who.title")}
             </span>
           </h2>
+
+          {/* Accent underline */}
+          <div className="mt-4 h-[3px] w-24 rounded-full bg-gradient-to-r from-[#D6AC44] to-transparent" />
+        </div>
 
           <p>{t("who.p1")}</p>
           <p>{t("who.p2")}</p>
