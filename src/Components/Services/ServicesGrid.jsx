@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 export default function ServicesGrid() {
   const { t } = useTranslation();
 
-  const icons = ["📘", "📊", "🧾", "⚖️", "⚙️", "🤝", "🧩"];
+  const icons = ["📘", "📊", "🧾", "⚖️", "🤝", "🧩"];
 
   return (
     <section className="py-24 bg-gradient-to-br from-[#202C53] via-[#202C53]/95 to-[#0b1c2d] border-t border-[#616160]/40">

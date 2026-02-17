@@ -138,7 +138,7 @@ export default function Header() {
 
         {/* ================= MOBILE NAV ================= */}
         {mobileOpen && (
-          <div className="md:hidden mt-6 bg-[#532C20]/95 backdrop-blur rounded-xl p-6 text-sm font-medium">
+          <div className="md:hidden mt-6 bg-[#616160] backdrop-blur rounded-xl p-6 text-sm font-medium">
 
             <div className="flex flex-col gap-4">
 

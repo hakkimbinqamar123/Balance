@@ -18,14 +18,14 @@
     "title_line1": "Where Numbers",
     "title_highlight": "Find Balance",
 
-    "description_1": "Professional accounting, auditing, and tax advisory services designed to bring clarity, compliance, and confidence to your business.",
+    "description_1": "Professional accounting and tax advisory services designed to bring clarity, compliance, and confidence to your business.",
 
     "description_2": "Balance Accounting & Tax Consultancy supports businesses across the UAE with reliable accounting, UAE VAT, and Corporate Tax solutions delivered with precision, integrity, and a deep understanding of local regulations.",
 
     "cta": "Schedule Consultation"
   },
   "why": {
-    "title": "Why Balance Accounting & Tax Consultancy",
+    "title": "Why Choose Balance Accounting & Tax Consultancy ?",
 
     "cards": [
       {
@@ -138,11 +138,13 @@
       "Financial Reporting",
       "UAE VAT Services",
       "Corporate Tax (CT)",
-      "Process & Controls Review"
+      "Payroll Service",
+      "Audit Support Services"
     ],
 
     "labels": {
       "email": "Email",
+      "phone": "Phone",
       "office": "Office"
     },
 
@@ -155,17 +157,17 @@
 
     "map": "View on Map →",
 
-    "copyright": "Balance Accounting & Tax Consultancy. All rights reserved.",
+    "copyright": "Balance Accounting & Tax Consultancy Limited. All rights reserved.",
 
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
   },
   "aboutHero": {
-    "label": "About Us",
-    "title": "Clarity. Compliance. Financial Balance."
+    "label": "Who We Are",
+    "title": "Compliance With Clear Direction."
   },
   "who": {
-    "title": "Who We Are",
+    "title": "",
 
     "p1": "Balance Accounting & Tax Consultancy is a professional firm based in Abu Dhabi, managed by professionals with more than 18 years of experience, providing comprehensive accounting and tax advisory services to businesses across the UAE.",
 
@@ -231,10 +233,7 @@
         "title": "Corporate Tax (CT)",
         "text": "We assist businesses in meeting UAE Corporate Tax obligations through accurate tax calculations, compliance support, and filing preparation. Our services are designed to ensure compliance while aligning tax reporting with your financial records and business activities."
       },
-      {
-        "title": "Process Improvement & Controls",
-        "text": "We help businesses enhance efficiency and strengthen internal controls by reviewing existing financial processes and developing clear standard operating procedures (SOPs). Our focus is on reducing risk, improving accuracy, and creating structured, scalable accounting workflows."
-      },
+      
       {
         "title": "Payroll Service",
         "text": "Our Payroll Preparation Service ensures accurate calculation, proper documentation, and full compliance with UAE labor and regulatory requirements before salaries are processed and paid. We prepare payroll data systematically to support timely payments, reporting, and audit readiness."
@@ -257,6 +256,7 @@
 
     "labels": {
       "email": "Email",
+      "phone": "Phone",
       "office": "Office Address"
     },
 
@@ -271,7 +271,7 @@
 
     "form": {
       "title": "Send a Message",
-      "name": "Full Name",
+      "name": "Name",
       "email": "Email",
       "subject": "Subject",
       "message": "Message",

@@ -66,6 +66,15 @@ export default function Footer() {
                 info@balancellc.ae
               </a>
             </div>
+            <div>
+              <p className="text-[#D6AC44] mb-1">{t("footer.labels.phone")}</p>
+              <a
+                href="tel:+971 54 447 1999"
+                className="hover:text-[#EAC868] transition"
+              >
+                +971 54 447 1999
+              </a>
+            </div>
 
             <div>
               <p className="text-[#D6AC44] mb-1">{t("footer.labels.office")}</p>

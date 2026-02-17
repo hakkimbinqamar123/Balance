@@ -44,6 +44,18 @@ export default function ContactSection() {
 
               <div>
                 <p className="text-[#D6AC44] text-sm">
+                  {t("contactSection.labels.phone")}
+                </p>
+                <a
+                  href="tel:+971544471999"
+                  className="text-lg hover:text-[#EAC868] transition"
+                >
+                  +971 54 447 1999
+                </a>
+              </div>
+
+              <div>
+                <p className="text-[#D6AC44] text-sm">
                   {t("contactSection.labels.office")}
                 </p>
                 <p className="text-lg leading-relaxed">

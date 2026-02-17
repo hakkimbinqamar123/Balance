@@ -1,4 +1,4 @@
-import aboutBg from "../../assets/Images/about-bg.webp";
+import aboutBg from "../../assets/Images/about-bg2.webp";
 import { useTranslation } from "react-i18next";
 
 export default function AboutHero() {

@@ -17,10 +17,6 @@ export default function CoreValues() {
             </span>
           </h2>
 
-          <p className="text-[#C7C6C6] leading-relaxed">
-            {t("values.subtitle")}
-          </p>
-
           {/* Accent underline */}
           <div className="mt-4 h-[3px] w-24 rounded-full bg-gradient-to-r from-[#D6AC44] to-transparent" />
         </div>
