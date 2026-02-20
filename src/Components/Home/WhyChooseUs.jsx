@@ -25,15 +25,19 @@ export default function WhyChooseUs() {
           {t("why.title")}
         </h2>
 
-        {/* ===== Stable Grid ===== */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-5 place-items-center">
+        {/* ===== Updated Responsive Grid ===== */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 place-items-center">
 
           {cards.map((card, i) => (
-            <div key={i} className="w-[220px] flip-card shadow-xl shadow-black/40">
+            <div key={i} className="w-full max-w-[280px] flip-card shadow-xl shadow-black/40">
               <div className="flip-inner">
 
                 <div className="flip-front">
-                  <img src={card.img} className="flip-image" />
+                  <img 
+                    src={card.img} 
+                    alt="Why Choose Us" 
+                    className="flip-image w-full h-full object-cover"
+                  />
                 </div>
 
                 <div className="flip-back p-5 bg-[#616160] flex flex-col justify-center border border-[#C7C6C6]/30">
@@ -50,7 +54,6 @@ export default function WhyChooseUs() {
           ))}
 
         </div>
-
 
         {/* Mission Block */}
         <div className="mt-16 relative group">
