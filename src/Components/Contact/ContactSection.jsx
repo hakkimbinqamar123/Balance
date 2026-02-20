@@ -1,6 +1,7 @@
 import { useState } from "react";
 import contactImg from "../../assets/Images/Website(25).webp";
 import { useTranslation } from "react-i18next";
+import { Instagram, Facebook, Linkedin } from "lucide-react";
 
 export default function ContactSection() {
   const { t } = useTranslation();
@@ -36,7 +37,12 @@ export default function ContactSection() {
 
       if (res.ok) {
         setStatus("success");
-        setForm({ name: "", email: "", subject: "", message: "" });
+        setForm({
+          name: "",
+          email: "",
+          subject: "",
+          message: ""
+        });
       } else {
         setStatus("error");
       }
@@ -49,10 +55,12 @@ export default function ContactSection() {
 
   return (
     <section className="py-24 pt-32 bg-gradient-to-br from-[#202C53] via-[#202C53]/95 to-[#0b1c2d]">
-      <div className="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-16">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 grid grid-cols-1 md:grid-cols-2 gap-16">
 
+        {/* LEFT SIDE */}
         <div className="space-y-10 text-start">
 
+          {/* Image */}
           <div className="relative group">
             <img
               src={contactImg}
@@ -62,6 +70,7 @@ export default function ContactSection() {
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#202C53]/40 to-[#D6AC44]/20 mix-blend-multiply" />
           </div>
 
+          {/* Contact Info */}
           <div>
             <h2 className="font-hero text-3xl mb-6">
               <span className="bg-gradient-to-r from-[#F7E2BA] via-[#EAC868] to-[#D6AC44] bg-clip-text text-transparent">
@@ -71,40 +80,48 @@ export default function ContactSection() {
 
             <div className="space-y-6 text-[#C7C6C6]">
 
+              {/* Email */}
               <div>
                 <p className="text-[#D6AC44] text-sm">
                   {t("contactSection.labels.email")}
                 </p>
-                <a href="mailto:info@balancellc.ae" className="text-lg hover:text-[#EAC868] transition">
+                <a
+                  href="mailto:info@balancellc.ae"
+                  className="text-lg hover:text-[#EAC868] transition"
+                >
                   info@balancellc.ae
                 </a>
               </div>
 
+              {/* Phone */}
               <div>
                 <p className="text-[#D6AC44] text-sm">
                   {t("contactSection.labels.phone")}
                 </p>
                 <a
                   href="tel:+971544471999"
-                  dir="ltr"
-                  className="inline-block text-left text-lg hover:text-[#EAC868] transition"
+                  className="text-lg hover:text-[#EAC868] transition"
                 >
                   +971 54 447 1999
                 </a>
               </div>
 
-
+              {/* Address */}
               <div>
                 <p className="text-[#D6AC44] text-sm">
                   {t("contactSection.labels.office")}
                 </p>
                 <p className="text-lg leading-relaxed">
                   {address.map((line, i) => (
-                    <span key={i}>{line}<br /></span>
+                    <span key={i}>
+                      {line}
+                      <br />
+                    </span>
                   ))}
                 </p>
               </div>
 
+              {/* Google Map Button */}
               <div>
                 <a
                   href="https://maps.app.goo.gl/iJtABtNNUqx5KDLe6?g_st=iw"
@@ -117,10 +134,46 @@ export default function ContactSection() {
                 </a>
               </div>
 
+              {/* Social Icons */}
+              <div className="pt-6">
+                <p className="text-[#D6AC44] text-sm mb-3">Follow Us</p>
+                <div className="flex items-center gap-5">
+
+                  <a
+                    href="https://www.instagram.com/balanceaccountingtax?igsh=MThsZnpkeTQzaHZjMQ%3D%3D&utm_source=qr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-3 rounded-full border border-[#F7E2BA]/40 hover:bg-[#F7E2BA] hover:text-[#202C53] transition transform hover:scale-110"
+                  >
+                    <Instagram size={20} />
+                  </a>
+
+                  <a
+                    href="https://www.facebook.com/share/1GjjsLwFMU/?mibextid=wwXIfr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-3 rounded-full border border-[#F7E2BA]/40 hover:bg-[#F7E2BA] hover:text-[#202C53] transition transform hover:scale-110"
+                  >
+                    <Facebook size={20} />
+                  </a>
+
+                  <a
+                    href="https://www.linkedin.com/company/balance-accounting-tax-consultancy-limited/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-3 rounded-full border border-[#F7E2BA]/40 hover:bg-[#F7E2BA] hover:text-[#202C53] transition transform hover:scale-110"
+                  >
+                    <Linkedin size={20} />
+                  </a>
+
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
 
+        {/* RIGHT SIDE FORM */}
         <div className="bg-[#202C53]/90 border border-[#616160]/40 rounded-2xl p-10 text-start shadow-xl">
 
           <h3 className="font-hero text-2xl mb-8">
@@ -149,8 +202,8 @@ export default function ContactSection() {
                 {t("contactSection.form.email")}
               </label>
               <input
-                name="email"
                 type="email"
+                name="email"
                 value={form.email}
                 onChange={handleChange}
                 required
@@ -175,8 +228,8 @@ export default function ContactSection() {
                 {t("contactSection.form.message")}
               </label>
               <textarea
-                name="message"
                 rows={5}
+                name="message"
                 value={form.message}
                 onChange={handleChange}
                 required
@@ -193,11 +246,15 @@ export default function ContactSection() {
             </button>
 
             {status === "success" && (
-              <p className="text-green-400 text-sm">Message sent successfully</p>
+              <p className="text-green-400 text-sm">
+                Message sent successfully
+              </p>
             )}
 
             {status === "error" && (
-              <p className="text-red-400 text-sm">Failed to send message</p>
+              <p className="text-red-400 text-sm">
+                Failed to send message
+              </p>
             )}
 
           </form>

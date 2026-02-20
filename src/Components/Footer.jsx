@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import { Instagram, Facebook, Linkedin } from "lucide-react";
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -10,8 +11,9 @@ export default function Footer() {
   return (
     <footer className="bg-gradient-to-br from-[#202C53] via-[#202C53]/95 to-[#0b1c2d] text-[#C7C6C6] border-t border-[#202C53]">
 
-      <div className="max-w-7xl mx-auto px-8 py-16 grid md:grid-cols-4 gap-12">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 py-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
 
+        {/* Company */}
         <div className="text-start">
           <h3 className="font-semibold text-lg mb-4 bg-gradient-to-r from-[#F7E2BA] to-[#EAC868] bg-clip-text text-transparent">
             {t("footer.company_title")}
@@ -21,6 +23,7 @@ export default function Footer() {
           </p>
         </div>
 
+        {/* Quick Links */}
         <div className="text-start">
           <h4 className="font-semibold mb-4 bg-gradient-to-r from-[#F7E2BA] to-[#EAC868] bg-clip-text text-transparent">
             {t("footer.quick_links")}
@@ -33,6 +36,7 @@ export default function Footer() {
           </ul>
         </div>
 
+        {/* Services */}
         <div className="text-start">
           <h4 className="font-semibold mb-4 bg-gradient-to-r from-[#F7E2BA] to-[#EAC868] bg-clip-text text-transparent">
             {t("footer.services")}
@@ -46,6 +50,7 @@ export default function Footer() {
           </ul>
         </div>
 
+        {/* Contact */}
         <div className="text-start">
           <h4 className="font-semibold mb-4 bg-gradient-to-r from-[#F7E2BA] to-[#EAC868] bg-clip-text text-transparent">
             {t("footer.contact")}
@@ -57,8 +62,7 @@ export default function Footer() {
               <p className="text-[#D6AC44] mb-1">{t("footer.labels.email")}</p>
               <a
                 href="mailto:info@balancellc.ae"
-                dir="ltr"
-                className="inline-block text-left hover:text-[#EAC868] transition"
+                className="hover:text-[#EAC868] transition"
               >
                 info@balancellc.ae
               </a>
@@ -68,8 +72,7 @@ export default function Footer() {
               <p className="text-[#D6AC44] mb-1">{t("footer.labels.phone")}</p>
               <a
                 href="tel:+971544471999"
-                dir="ltr"
-                className="inline-block text-left hover:text-[#EAC868] transition"
+                className="hover:text-[#EAC868] transition"
               >
                 +971 54 447 1999
               </a>
@@ -103,12 +106,45 @@ export default function Footer() {
 
       </div>
 
+      {/* Bottom Bar */}
       <div className="border-t border-[#202C53]/70 bg-[#202C53]/60">
-        <div className="max-w-7xl mx-auto px-8 py-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-[#C7C6C6]/70">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 py-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-[#C7C6C6]/70">
 
           <p>
             © {new Date().getFullYear()} {t("footer.copyright")}
           </p>
+
+          {/* Social Icons */}
+          <div className="flex items-center gap-5">
+
+            <a
+              href="https://www.instagram.com/balanceaccountingtax?igsh=MThsZnpkeTQzaHZjMQ%3D%3D&utm_source=qr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#EAC868] transition transform hover:scale-110"
+            >
+              <Instagram size={20} />
+            </a>
+
+            <a
+              href="https://www.facebook.com/share/1GjjsLwFMU/?mibextid=wwXIfr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#EAC868] transition transform hover:scale-110"
+            >
+              <Facebook size={20} />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/company/balance-accounting-tax-consultancy-limited/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#EAC868] transition transform hover:scale-110"
+            >
+              <Linkedin size={20} />
+            </a>
+
+          </div>
 
           <div className="flex gap-6">
             <Link to="/privacy" className="hover:text-[#EAC868] transition">
