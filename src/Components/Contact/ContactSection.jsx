@@ -100,7 +100,8 @@ export default function ContactSection() {
                 </p>
                 <a
                   href="tel:+971544471999"
-                  className="text-lg hover:text-[#EAC868] transition"
+                  dir="ltr"
+                  className="hover:text-[#EAC868] transition inline-block text-left"
                 >
                   +971 54 447 1999
                 </a>

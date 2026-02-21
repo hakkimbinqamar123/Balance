@@ -14,19 +14,14 @@
   },
   "hero": {
     "tagline": "Balance Accounting & Tax Consultancy",
-
     "title_line1": "Where Numbers",
     "title_highlight": "Find Balance",
-
     "description_1": "Professional accounting and tax advisory services designed to bring clarity, compliance, and confidence to your business.",
-
     "description_2": "Balance Accounting & Tax Consultancy supports businesses across the UAE with reliable accounting, UAE VAT, and Corporate Tax solutions delivered with precision, integrity, and a deep understanding of local regulations.",
-
     "cta": "Schedule Consultation"
   },
   "why": {
     "title": "Why Choose Balance Accounting & Tax Consultancy ?",
-
     "cards": [
       {
         "title": "18+ Years Experience",
@@ -49,13 +44,11 @@
         "text": "Clear communication and reliable ongoing support."
       }
     ],
-
     "mission": "At Balance Accounting & Tax Consultancy, we believe that well-structured numbers create confidence in decision-making. Our mission is to help businesses stay compliant, organized, and financially balanced so they can focus on growth."
   },
-"how": {
+  "how": {
     "title": "How We Work",
     "subtitle": "Our structured and transparent approach ensures accuracy, compliance, and clarity at every stage of your financial process.",
-
     "steps": [
       {
         "title": "Understand Your Business",
@@ -82,7 +75,6 @@
   "industries": {
     "title": "Industries We Support",
     "subtitle": "We provide accounting and tax compliance support across a wide range of business sectors in the UAE.",
-
     "items": [
       {
         "title": "SMEs",
@@ -121,18 +113,15 @@
   "footer": {
     "company_title": "Balance Accounting & Tax Consultancy",
     "company_text": "Professional accounting, VAT, and Corporate Tax advisory services across the UAE — delivering clarity, compliance, and financial balance for growing businesses.",
-
     "quick_links": "Quick Links",
     "services": "Services",
     "contact": "Contact",
-
     "links": {
       "home": "Home",
       "about": "About Us",
       "services": "Services",
       "contact": "Contact"
     },
-
     "service_list": [
       "Accounting & Bookkeeping",
       "Financial Reporting",
@@ -141,24 +130,19 @@
       "Payroll Service",
       "Audit Support Services"
     ],
-
     "labels": {
       "email": "Email",
       "phone": "Phone",
       "office": "Office"
     },
-
     "address": [
       "Smart Station, First Floor",
       "Incubator Building",
       "Masdar City, Abu Dhabi",
       "United Arab Emirates"
     ],
-
     "map": "View on Map →",
-
     "copyright": "Balance Accounting & Tax Consultancy Limited. All rights reserved.",
-
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
   },
@@ -168,19 +152,14 @@
   },
   "who": {
     "title": "Who We Are",
-
     "p1": "Balance Accounting & Tax Consultancy is a professional firm based in Abu Dhabi, managed by professionals with more than 18 years of experience, providing comprehensive accounting and tax advisory services to businesses across the UAE.",
-
     "p2": "We support organizations in maintaining accurate financial records, ensuring regulatory compliance, and building strong financial foundations that enable sustainable growth.",
-
     "p3": "With deep expertise across accounting, taxation, statutory reporting, and internal controls, we simplify complex financial processes and deliver clarity, structure, and confidence in financial decision-making.",
-
     "imgAlt": "About Balance Accounting & Tax Consultancy"
   },
   "vision": {
     "vision_title": "Our Vision",
     "vision_text": "To be a trusted accounting and tax advisory firm in UAE, recognized for clarity, balance, and reliability, while supporting sustainable, forward-thinking businesses through compliant and transparent financial decision-making.",
-
     "mission_title": "Our Mission",
     "mission_text": "To simplify financial complexity by delivering accurate accounting, compliant tax solutions, and structured financial processes that allow businesses to focus on growth and sustainability."
   },
@@ -209,7 +188,6 @@
       }
     ]
   },
-
   "servicesHero": {
     "label": "Our Services",
     "title": "Professional Accounting & Tax Solutions",
@@ -234,7 +212,6 @@
         "title": "Corporate Tax (CT)",
         "text": "We assist businesses in meeting UAE Corporate Tax obligations through accurate tax calculations, compliance support, and filing preparation. Our services are designed to ensure compliance while aligning tax reporting with your financial records and business activities."
       },
-      
       {
         "title": "Payroll Service",
         "text": "Our Payroll Preparation Service ensures accurate calculation, proper documentation, and full compliance with UAE labor and regulatory requirements before salaries are processed and paid. We prepare payroll data systematically to support timely payments, reporting, and audit readiness."
@@ -252,24 +229,19 @@
   },
   "contactSection": {
     "imgAlt": "Office",
-
     "title": "Get in Touch",
-
     "labels": {
       "email": "Email",
       "phone": "Phone",
       "office": "Office Address"
     },
-
     "address": [
       "Smart Station, First Floor",
       "Incubator Building",
       "Masdar City, Abu Dhabi",
       "United Arab Emirates"
     ],
-
     "mapButton": "View Location on Map",
-
     "form": {
       "title": "Send a Message",
       "name": "Name",
@@ -278,5 +250,12 @@
       "message": "Message",
       "submit": "Send Message"
     }
+  },
+  "seal": {
+    "certified": "CERTIFIED",
+    "approved": "FTA Approved",
+    "taxAgency": "Tax Agency",
+    "authority": "UAE Federal Tax Authority",
+    "click": "Click to View Certificate"
   }
 }

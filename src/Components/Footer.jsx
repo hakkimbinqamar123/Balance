@@ -72,7 +72,8 @@ export default function Footer() {
               <p className="text-[#D6AC44] mb-1">{t("footer.labels.phone")}</p>
               <a
                 href="tel:+971544471999"
-                className="hover:text-[#EAC868] transition"
+                dir="ltr"
+                className="hover:text-[#EAC868] transition inline-block text-left"
               >
                 +971 54 447 1999
               </a>
