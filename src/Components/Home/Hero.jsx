@@ -9,7 +9,7 @@ export default function Hero() {
   const [open, setOpen] = useState(false);
 
   return (
-    <section className="relative h-screen min-h-[720px] pt-4 w-full overflow-hidden">
+    <section className="relative h-screen md:min-h-[720px] min-h-[920px] pt-38 md:pt-4 w-full overflow-hidden">
 
       {/* Background */}
       <img
