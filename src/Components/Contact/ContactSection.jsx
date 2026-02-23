@@ -2,6 +2,7 @@ import { useState } from "react";
 import contactImg from "../../assets/Images/Website(25).webp";
 import { useTranslation } from "react-i18next";
 import { Instagram, Facebook, Linkedin } from "lucide-react";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export default function ContactSection() {
   const { t } = useTranslation();
@@ -16,6 +17,7 @@ export default function ContactSection() {
 
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState("");
+  const [captchaToken, setCaptchaToken] = useState(null);
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -23,6 +25,12 @@ export default function ContactSection() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!captchaToken) {
+      setStatus("Please verify captcha");
+      return;
+    }
+
     setLoading(true);
     setStatus("");
 
@@ -32,7 +40,10 @@ export default function ContactSection() {
         headers: {
           "Content-Type": "application/json"
         },
-        body: JSON.stringify(form)
+        body: JSON.stringify({
+          ...form,
+          captchaToken
+        })
       });
 
       if (res.ok) {
@@ -43,6 +54,7 @@ export default function ContactSection() {
           subject: "",
           message: ""
         });
+        setCaptchaToken(null);
       } else {
         setStatus("error");
       }
@@ -237,7 +249,10 @@ export default function ContactSection() {
                 className="w-full mt-2 bg-[#0b1c2d] border border-[#616160]/50 rounded-lg px-4 py-3 focus:border-[#EAC868] outline-none text-white"
               />
             </div>
-
+            <ReCAPTCHA
+              sitekey="6LfM33QsAAAAAIWqr7_UOlKBWqpMA11B0AKx6neY"
+              onChange={(token) => setCaptchaToken(token)}
+            />
             <button
               type="submit"
               disabled={loading}
